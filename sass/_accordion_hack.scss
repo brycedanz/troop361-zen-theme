@@ -1,0 +1,2 @@
+//this hacky css stops accordions autoheight from creating tons of whitspace
+.ui-accordion-content-active { height: inherit !important; }
