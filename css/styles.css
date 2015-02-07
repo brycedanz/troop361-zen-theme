@@ -1700,7 +1700,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1422649621');
+  background-image: url('../images/progress.gif?1423340223');
 }
 
 /**
@@ -1862,76 +1862,44 @@ article.eagle-scout-entry-node img {
 
 /* line 5, ../sass/_page.scss */
 html {
+  background-image: url("../longmire.jpg");
+  background-size: 100%;
   /* Generates background gradient - FFFFFF to 588c73 at bottom, to match scout symbol blue */
-  background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, white 0%, #015f9d 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #015f9d));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, white 0%, #015f9d 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, white 0%, #015f9d 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, white 0%, #015f9d 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #ffffff 0%, #015f9d 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#015f9d',GradientType=0 );
-  /* IE6-9 */
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-/* line 32, ../sass/_page.scss */
+/* line 22, ../sass/_page.scss */
 header {
-  border-radius: 15px;
   background-color: #FFF;
 }
 
-/* line 37, ../sass/_page.scss */
+/* line 26, ../sass/_page.scss */
 div#page {
-  border-radius: 10px;
   background-color: #FFF;
   min-height: 800px;
+}
+
+/* line 33, ../sass/_page.scss */
+#flexslider-1 {
+  max-height: 400px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 40, ../sass/_page.scss */
+#flexslider-1 img {
+  max-width: 600px;
+  max-height: 400px;
+}
+
+/* change views zebra stripe to light blue */
+/* line 52, ../sass/_page.scss */
+.view-content table tbody tr.odd {
+  background-color: #A9C9EA;
 }
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
-
-#flexslider-1 {
-	margin-right: 25px;
-	margin-bottom: 25px;
-}
-
-
-@media (min-width: 600px) {
-
-#flexslider-1 {
-	width: 75%;
-	margin: 0 auto;	
-    max-width: 480px;
-    max-height: 222px;
-	float: left;
-	padding-left: 15px;
-	margin-right: 25px;
-	margin-bottom: 25px;
-}
-
-#flexslider-1 img {
-	max-width: 480px;
-	max-height: 222px;
-}
-}
-
-@media (max-width: 599px) {
-#flexslider-1 {
-	width: 75%;
-	margin: 0 auto;	
-    max-width: 25%;
-    max-height: 25%;
-}
-
-}
