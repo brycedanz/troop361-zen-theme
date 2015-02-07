@@ -1,0 +1,16 @@
+//styles for outing nodes
+
+
+//center title
+h2.pane-title {
+	text-align: center;
+}
+
+
+//force image to left and add padding
+article.outing-node {
+	img {
+		float: left;
+		padding: 20px;
+	}
+}

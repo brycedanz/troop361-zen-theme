@@ -1,0 +1,41 @@
+//main background styles
+
+//gradient for background
+
+html {
+
+//set forest green background color
+//background-color: #588C73;
+
+
+/* Generates background gradient - FFFFFF to 588c73 at bottom, to match scout symbol blue */
+
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #015f9d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#015f9d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 0%,#015f9d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 0%,#015f9d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffffff 0%,#015f9d 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ffffff 0%,#015f9d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#015f9d',GradientType=0 ); /* IE6-9 */
+
+
+
+//prevents a duplicate html.js from appearing below the main html element
+
+height: 100%; 
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+//round top corners
+header {
+	border-radius: 15px;
+	background-color: #FFF;
+}
+
+div#page {
+	border-radius: 10px;
+	background-color: #FFF;
+	min-height: 800px;
+}

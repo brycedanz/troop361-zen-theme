@@ -1,0 +1,52 @@
+/*
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "init";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Layout rules */
+@import "layouts/responsive";
+
+/* Component (SMACSS module) rules */
+@import "components/misc";
+// Optionally, add your own components here.
+@import "print";
+
+//import logo styling partial, including muli font
+@import "logo";
+
+//import flexslider styles for front page
+@import "flexslideroverride";
+
+//styling for views table
+@import "views_table";
+
+//styling for meetings page
+@import "meetings";
+
+//styles for troop outing information pages
+@import "outing";
+
+//styles for eagle scout profile pages
+@import "eagle_profile";
+
+//hacky css trick to stop accordion from having tons of whitespace. Should fix this at some point
+@import "accordion_hack";
+
+//the main page styles; background, etc. 
+@import "page";
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+
+
+
